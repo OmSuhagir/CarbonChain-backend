@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 // MIDDLEWARE
 // ============================================================
 // Allow CORS from configured frontend URL (or allow all if not set)
-const FRONTEND_URL = process.env.FRONTEND_URL || '*';
+const FRONTEND_URL ="https://carbon-chain-one.vercel.app"|| process.env.FRONTEND_URL || '*';
 app.use(
   cors({
     origin: FRONTEND_URL === '*' ? true : FRONTEND_URL,
